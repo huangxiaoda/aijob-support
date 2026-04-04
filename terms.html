@@ -203,13 +203,13 @@
         </div>
     </div>
 <script>
-    function goBack() {
-        if (typeof plus !== 'undefined' && plus.webview) {
-            plus.webview.currentWebview().close();
-        } else {
-            window.history.back();
+        function goBack() {
+            if (typeof plus !== 'undefined') {
+                plus.webview.currentWebview().close();
+            } else {
+                window.history.back();
+            }
         }
-    }
-</script>
+    </script>
 </body>
 </html>
